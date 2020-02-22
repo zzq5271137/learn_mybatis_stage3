@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mycomp.mybatis.mapper.CustomerMapper">
+    <!-- 输出简单类型(查询总数) -->
+    <select id="getCount" resultType="Integer">
+        SELECT COUNT(*) FROM customer
+    </select>
+
+    <!-- 输出对象, (根据id获取用户) -->
+    <select id="getCustomerByIdCust"
+            resultType="com.mycomp.mybatis.domain.Customer">
+        SELECT * FROM customer WHERE cust_id = #{id}
+    </select>
+
+    <!-- 输出Map类型, 方式一, (根据id获取用户) -->
+    <select id="getCustomerByIdMap" resultType="Map">
+        SELECT * FROM customer WHERE cust_id = #{id}
+    </select>
+
+    <!-- 输出Map类型, 方式二, 以cust_id为Map的key, (获取所有的用户) -->
+    <select id="getAllCustomerCase1" resultType="Map">
+        SELECT * FROM customer
+    </select>
+
+    <!-- 输出Map类型, 方式二, 以cust_name为Map的key, (获取所有的用户) -->
+    <select id="getAllCustomerCase2" resultType="Map">
+        SELECT * FROM customer
+    </select>
+
+    <!--
+        如果数据库中的字段和domain中的字段不一致, 但是又想直接输出封装好的对象,
+        可以自己配置一个resultMap, 去代替resultType
+     -->
+    <resultMap id="customerMap" type="com.mycomp.mybatis.domain.Customer">
+        <id column="cust_id" property="cust_id_c"/>
+        <result column="cust_name" property="cust_name_c"/>
+        <result column="cust_profession" property="cust_profession_c"/>
+        <result column="cust_phone" property="cust_phone_c"/>
+        <result column="email" property="email_c"/>
+    </resultMap>
+
+</mapper>
