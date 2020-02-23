@@ -3,6 +3,7 @@ package com.mycomp.mybatis.mapper;
 import com.mycomp.mybatis.domain.Customer;
 import org.apache.ibatis.annotations.MapKey;
 
+import java.util.List;
 import java.util.Map;
 
 public interface CustomerMapper {
@@ -24,4 +25,12 @@ public interface CustomerMapper {
     @MapKey("cust_name")
     Map<String, Customer> getAllCustomerCase2();
 
+    // 插入一条客户信息
+    void insertCustomer(Customer customer);
+
+    // 采用左连接的方式, 查询所有的用户, 并查询出其相关联的订单
+    List<Customer> getAllCustomers1();
+
+    // 采用分步查询的方式, 查询所有的用户, 并查询出其相关联的订单
+    List<Customer> getAllCustomers2();
 }

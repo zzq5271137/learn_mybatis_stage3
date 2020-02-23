@@ -41,4 +41,47 @@
         <result column="email" property="email_c"/>
     </resultMap>
 
+    <!-- 插入一条客户信息 -->
+    <insert id="insertCustomer"
+            parameterType="com.mycomp.mybatis.domain.Customer"
+            useGeneratedKeys="true" keyProperty="cust_id" keyColumn="cust_id">
+        INSERT INTO customer (cust_name, cust_profession, cust_phone, email)
+        VALUES (#{cust_name}, #{cust_profession}, #{cust_phone}, #{email})
+    </insert>
+
+    <!-- 采用左连接的方式, 查询所有的用户, 并查询出其相关联的订单 -->
+    <select id="getAllCustomers1" resultMap="custOrderMap1">
+        SELECT * FROM customer AS c LEFT JOIN `order` o ON c.cust_id = o.cust_id
+    </select>
+    <resultMap id="custOrderMap1" type="com.mycomp.mybatis.domain.Customer">
+        <id column="cust_id" property="cust_id"/>
+        <result column="cust_name" property="cust_name"/>
+        <result column="cust_profession" property="cust_profession"/>
+        <result column="cust_phone" property="cust_phone"/>
+        <result column="email" property="email"/>
+
+        <collection property="orders" ofType="com.mycomp.mybatis.domain.Order">
+            <id column="order_id" property="order_id"/>
+            <result column="order_name" property="order_name"/>
+            <result column="order_num" property="order_num"/>
+        </collection>
+    </resultMap>
+
+    <!-- 采用分步查询的方式, 查询所有的用户, 并查询出其相关联的订单 -->
+    <select id="getAllCustomers2" resultMap="custOrderMap2">
+        SELECT * FROM customer
+    </select>
+    <resultMap id="custOrderMap2" type="com.mycomp.mybatis.domain.Customer">
+        <id column="cust_id" property="cust_id"/>
+        <result column="cust_name" property="cust_name"/>
+        <result column="cust_profession" property="cust_profession"/>
+        <result column="cust_phone" property="cust_phone"/>
+        <result column="email" property="email"/>
+
+        <collection property="orders" javaType="List"
+                    ofType="com.mycomp.mybatis.domain.Order"
+                    select="com.mycomp.mybatis.mapper.OrderMapper.getOrderByCustId"
+                    column="cust_id"/>
+    </resultMap>
+
 </mapper>

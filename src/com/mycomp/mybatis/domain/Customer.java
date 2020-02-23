@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -14,5 +17,6 @@ public class Customer {
     private String cust_profession;
     private String cust_phone;
     private String email;
+    private List<Order> orders = new ArrayList<>();
 
 }
