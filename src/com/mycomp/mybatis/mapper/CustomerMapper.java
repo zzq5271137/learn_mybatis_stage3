@@ -6,6 +6,10 @@ import org.apache.ibatis.annotations.MapKey;
 import java.util.List;
 import java.util.Map;
 
+/*
+ * 查询输出类型
+ */
+
 public interface CustomerMapper {
 
     // 输出简单类型(查询总数)

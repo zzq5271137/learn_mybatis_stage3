@@ -2,6 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<!--
+    查询输出类型
+-->
+
 <mapper namespace="com.mycomp.mybatis.mapper.CustomerMapper">
     <!-- 输出简单类型(查询总数) -->
     <select id="getCount" resultType="Integer">

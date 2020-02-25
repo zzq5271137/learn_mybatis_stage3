@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fc4d12e-0986-4d14-9d10-a88b609f77dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatislocal.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/domain/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/TeacherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/TeacherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/test/MyTest3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/test/MyTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/test/MyTest2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/test/MyTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/test/MyTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,6 +327,7 @@
       <workItem from="1582538112655" duration="1694000" />
       <workItem from="1582550796132" duration="298000" />
       <workItem from="1582611127342" duration="3489000" />
+      <workItem from="1582615363817" duration="78000" />
     </task>
     <servers />
   </component>

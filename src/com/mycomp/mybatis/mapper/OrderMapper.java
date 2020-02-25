@@ -5,6 +5,10 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
+/*
+ * 一对多的相关操作
+ */
+
 public interface OrderMapper {
 
     // 查询所有的Order, 并且查询出所有相应的Customer
