@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    多对多的相关操作
+ -->
+
+<mapper namespace="com.mycomp.mybatis.mapper.TeacherMapper">
+    <!-- 封装查询所有老师的结果集 -->
+    <resultMap id="allTeachersMap" type="com.mycomp.mybatis.domain.Teacher">
+        <id column="teacher_id" property="teacher_id"/>
+        <result column="teacher_name" property="teacher_name"/>
+
+        <collection property="students" javaType="list"
+                    ofType="com.mycomp.mybatis.domain.Student">
+            <id column="stu_id" property="stu_id"/>
+            <result column="stu_name" property="stu_name"/>
+        </collection>
+    </resultMap>
+
+    <!-- 采用左连接的方式, 查询所有老师, 并其把关联的所有学生也查出来 -->
+    <select id="getAllTeachers" resultMap="allTeachersMap">
+        SELECT *
+        FROM teacher AS t
+                 LEFT JOIN stu_teacher_rel str on t.teacher_id = str.teacher_id
+                 LEFT JOIN student s on str.stu_id = s.stu_id
+    </select>
+
+    <!-- 封装根据id查询指定的老师的结果集 -->
+    <resultMap id="teacherByIdMap" type="com.mycomp.mybatis.domain.Teacher">
+        <id column="teacher_id" property="teacher_id"/>
+        <result column="teacher_name" property="teacher_name"/>
+
+        <collection property="students"
+                    ofType="com.mycomp.mybatis.domain.Student"
+                    select="com.mycomp.mybatis.mapper.StudentMapper.getStusByTeacherIdCollection"
+                    column="teacher_id"/>
+    </resultMap>
+
+    <!-- 采用分步查询的方式, 根据id查询指定的老师 -->
+    <select id="getTeacherByid" resultMap="teacherByIdMap">
+        SELECT *
+        FROM teacher
+        WHERE teacher_id = #{id}
+    </select>
+
+    <!-- 保存老师 -->
+    <insert id="insertTeacher"
+            parameterType="com.mycomp.mybatis.domain.Teacher"
+            useGeneratedKeys="true"
+            keyColumn="teacher_id" keyProperty="teacher_id">
+        INSERT INTO teacher (teacher_name)
+        VALUES (#{teacher_name})
+    </insert>
+
+    <!-- 插入关系表 -->
+    <insert id="insertRel">
+        INSERT INTO stu_teacher_rel (stu_id, teacher_id)
+        VALUES (#{stu_id}, #{teacher_id})
+    </insert>
+
+</mapper>

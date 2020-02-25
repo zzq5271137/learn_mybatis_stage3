@@ -90,4 +90,11 @@
         WHERE order_id = #{order_id}
     </update>
 
+    <!-- 打破关系 -->
+    <update id="updateRelation">
+        UPDATE `order`
+        SET cust_id = NULL
+        WHERE cust_id = #{cust_id}
+    </update>
+
 </mapper>

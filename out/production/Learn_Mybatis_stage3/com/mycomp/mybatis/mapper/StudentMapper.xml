@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mycomp.mybatis.mapper.StudentMapper">
+    <!-- 根据老师id的集合查询学生 -->
+    <select id="getStusByTeacherIdCollection"
+            resultType="com.mycomp.mybatis.domain.Student">
+        SELECT *
+        FROM student
+        WHERE stu_id IN
+              (SELECT stu_id FROM stu_teacher_rel WHERE teacher_id = #{id})
+    </select>
+
+    <!-- 保存学生 -->
+    <insert id="insertStudent"
+            parameterType="com.mycomp.mybatis.domain.Student"
+            useGeneratedKeys="true"
+            keyColumn="stu_id" keyProperty="stu_id">
+        INSERT INTO student (stu_name)
+        VALUES (#{stu_name})
+    </insert>
+
+</mapper>

@@ -33,4 +33,7 @@ public interface CustomerMapper {
 
     // 采用分步查询的方式, 查询所有的用户, 并查询出其相关联的订单
     List<Customer> getAllCustomers2();
+
+    // 根据id删除一个客户
+    void deleteCustomer(Integer id);
 }

@@ -111,4 +111,19 @@ public class MyTest2 {
         sqlSession.close();
     }
 
+    @Test
+    public void test7() {
+        SqlSession sqlSession = MybatisUtils.openSession();
+        CustomerMapper customerMapper = sqlSession.getMapper(CustomerMapper.class);
+        OrderMapper orderMapper = sqlSession.getMapper(OrderMapper.class);
+
+        // 一对多关系中的一, 在删除之前, 要先打破关系
+        orderMapper.updateRelation(19);
+        // 删除客户
+        customerMapper.deleteCustomer(19);
+
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
 }

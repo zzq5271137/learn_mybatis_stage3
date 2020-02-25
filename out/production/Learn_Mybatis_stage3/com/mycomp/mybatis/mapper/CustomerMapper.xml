@@ -84,4 +84,9 @@
                     column="cust_id"/>
     </resultMap>
 
+    <!-- 根据id删除一个客户 -->
+    <delete id="deleteCustomer">
+        DELETE FROM customer WHERE cust_id = #{id}
+    </delete>
+
 </mapper>

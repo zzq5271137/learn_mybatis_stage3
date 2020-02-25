@@ -21,4 +21,7 @@ public interface OrderMapper {
 
     // 更新关系
     void updateOrderCustId(@Param("order_id") Integer orderId, @Param("cust_id") Integer custId);
+
+    // 打破关系
+    void updateRelation(Integer cust_id);
 }

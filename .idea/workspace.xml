@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fc4d12e-0986-4d14-9d10-a88b609f77dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/test/MyTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/SqlMappingConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/SqlMappingConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/domain/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/domain/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatislocal.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/domain/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/test/MyTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/SqlMappingConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource/SqlMappingConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/test/MyTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Learn_Mybatis_stage3/com/mycomp/mybatis/test/MyTest2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/test/MyTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/test/MyTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +63,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -90,77 +97,16 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\IDEA_workspace\Learn_Mybatis_stage3\src\com\mycomp\mybatis\mapper" />
+      <recent name="H:\IDEA_workspace\Learn_Mybatis_stage3" />
       <recent name="H:\IDEA_workspace\Learn_Mybatis_stage3\src\com\mycomp\mybatis\domain" />
       <recent name="H:\IDEA_workspace\Learn_Mybatis_stage3\src\com\mycomp\mybatis\utils" />
       <recent name="H:\IDEA_workspace\Learn_Mybatis_stage3\resource" />
-      <recent name="H:\IDEA_workspace\Learn_Mybatis_stage3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\IDEA_workspace\Learn_Mybatis_stage3\src\com\mycomp\mybatis\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest2.test6">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.Main" />
-      <module name="Learn_Mybatis_stage3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest2.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Learn_Mybatis_stage3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest2" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest2.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Learn_Mybatis_stage3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest2" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest2.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Learn_Mybatis_stage3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest2" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyTest3.test3">
     <configuration name="MyTest2.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Learn_Mybatis_stage3" />
       <extension name="coverage">
@@ -172,6 +118,70 @@
       <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
       <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest2" />
       <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest2.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn_Mybatis_stage3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest2" />
+      <option name="METHOD_NAME" value="test7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest3.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn_Mybatis_stage3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest3" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest3.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn_Mybatis_stage3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest3" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest3.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Learn_Mybatis_stage3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycomp.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mycomp.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mycomp.mybatis.test.MyTest3" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -283,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest3.test3" />
+        <item itemvalue="JUnit.MyTest3.test2" />
+        <item itemvalue="JUnit.MyTest3.test1" />
+        <item itemvalue="JUnit.MyTest2.test7" />
         <item itemvalue="JUnit.MyTest2.test6" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MyTest2.test4" />
-        <item itemvalue="JUnit.MyTest2.test5" />
-        <item itemvalue="JUnit.MyTest2.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -328,6 +338,11 @@
       <workItem from="1582461069988" duration="1918000" />
       <workItem from="1582463225234" duration="4300000" />
       <workItem from="1582469893447" duration="1007000" />
+      <workItem from="1582509203496" duration="17000" />
+      <workItem from="1582533275975" duration="1166000" />
+      <workItem from="1582538112655" duration="1694000" />
+      <workItem from="1582550796132" duration="298000" />
+      <workItem from="1582611127342" duration="3489000" />
     </task>
     <servers />
   </component>
@@ -339,10 +354,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1582215462843" />
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582214719445">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582611954437">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582214719445" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582611954437" />
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1582369855502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -351,22 +366,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582386291121" />
-    <state width="1493" height="428" key="GridCell.Tab.0.bottom" timestamp="1582470901240">
+    <state width="1493" height="427" key="GridCell.Tab.0.bottom" timestamp="1582614619054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582470901240" />
-    <state width="1493" height="428" key="GridCell.Tab.0.center" timestamp="1582470901240">
+    <state width="1493" height="427" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582614619054" />
+    <state width="1493" height="427" key="GridCell.Tab.0.center" timestamp="1582614619054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582470901240" />
-    <state width="1493" height="428" key="GridCell.Tab.0.left" timestamp="1582470901240">
+    <state width="1493" height="427" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582614619054" />
+    <state width="1493" height="427" key="GridCell.Tab.0.left" timestamp="1582614619054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582470901240" />
-    <state width="1493" height="428" key="GridCell.Tab.0.right" timestamp="1582470901240">
+    <state width="1493" height="427" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582614619054" />
+    <state width="1493" height="427" key="GridCell.Tab.0.right" timestamp="1582614619054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582470901240" />
+    <state width="1493" height="427" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582614619054" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1582461099913">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
