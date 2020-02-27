@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fc4d12e-0986-4d14-9d10-a88b609f77dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mycomp/mybatis/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/课件/MyBatis.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/课件/Mybatis.pptx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,6 +327,7 @@
       <workItem from="1582550796132" duration="298000" />
       <workItem from="1582611127342" duration="3489000" />
       <workItem from="1582615363817" duration="78000" />
+      <workItem from="1582814754080" duration="1000" />
     </task>
     <servers />
   </component>
